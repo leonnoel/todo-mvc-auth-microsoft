@@ -1,7 +1,7 @@
-const OIDCStrategy = require('passport-azure-ad').OIDCStrategy
-const mongoose = require('mongoose')
-const config = require('../config/config')
-const User = require('../models/User')
+const OIDCStrategy = require('passport-azure-ad').OIDCStrategy //how we use azure for auth
+const mongoose = require('mongoose')  //require mongoose
+const config = require('../config/config') //require config files
+const User = require('../models/User')  //require the data model for our user
 
 module.exports = function (passport) {
   passport.use(
